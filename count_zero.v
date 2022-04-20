@@ -19,10 +19,10 @@ reg    [3  : 0] data_t;
 assign i_data_n = ~i_data;
 
 always @(*)begin
-    data_t[0] = i_data_n[0];
-    data_t[1] = i_data_n[1] & data_t[0];
-    data_t[2] = i_data_n[2] & data_t[1];
-    data_t[3] = i_data_n[3] & data_t[2];
+    data_t[3] = i_data_n[3];
+    data_t[2] = i_data_n[2] & data_t[3];
+    data_t[1] = i_data_n[1] & data_t[2];
+    data_t[0] = i_data_n[0] & data_t[1];
 
     o = data_t[0] + data_t[1] + data_t[2] + data_t[3];
 end
