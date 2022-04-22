@@ -1,7 +1,8 @@
 //module_name: count_zero
 //date       : 2022.4.17
 //author     : Zmz03
-//description: count the number of 0 before 1 in one data, for example count 0010_1001 is 2.
+//description: count the number of 0 before 1 in one data, for example 
+//count 0010_1001 is 2.
 
 module count_zero (
     i_data,
